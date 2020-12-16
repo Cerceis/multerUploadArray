@@ -1,0 +1,15 @@
+<html>
+	
+<body>
+	<!--enctype="multipart/form-data < This is important, multer.array need this to process req.files-->
+	<!--Send to server port-->
+	<form method="post" action="http://localhost:8000/uploadMultipleImages" enctype="multipart/form-data">
+		<label for="img">Select image:</label>
+		<input type="file" id="img" name="multipleImages" accept="image/*" multiple>
+		<input type="submit">
+	</form>
+	
+</body>	
+	
+	
+</html>
